@@ -1,13 +1,13 @@
 package com.biz.jck.domain.service;
 
-import com.sun.tools.javac.parser.Scanner;
-import com.sun.tools.javac.util.List;
+import java.util.List;
+import java.util.Scanner;
 
 public class RuleService {
 
 	List<card> dealerList;
 	List<card> userList;
-	java.util.Scanner scan;
+	Scanner scan;
 
 	public RuleService() {
 		// TODO Auto-generated constructor stub
