@@ -10,15 +10,14 @@ public class RuleService {
 	Scanner scan;
 
 	public RuleService() {
-		// TODO Auto-generated constructor stub
+		// TODO 생성자
 		dealerList = new ArrayList<card>();
 		userList = new ArrayList<card>();
 		scan = new Scanner(System.in);
 	}
 
-	public void rule() {
-		
-		// hit 결정
+	public void hit() {
+		// TODO hit 결정
 		System.out.println("hit : 1 , stay : 2");
 		Integer num = scan.nextInt();
 		if(num == 1) {
@@ -32,8 +31,10 @@ public class RuleService {
 			break;
 		}
 		
-		// 점수 및 버스트 확인
-		
+	}
+	
+	public void pointBust() {
+		// TODO 점수 및 버스트 확인
 		int dSize = dealer.size();
 		
 		boolean dealerBust = false;
@@ -52,8 +53,10 @@ public class RuleService {
 		if(player > 21) {
 			userBust = true;
 		}
-		
-		// 점수 공개 및 승패 결정
+	}
+	
+	public void wunRoo() {
+		// TODO 점수 공개 및 승패 결정
 		System.out.println("딜러 : " + dealerPoint );
 		System.out.println("플레이어 : " + userPoint);
 		
@@ -77,5 +80,6 @@ public class RuleService {
 		}
 		System.out.println("플레이어 카드 : " + user.get(i));
 	}
+
 
 }
