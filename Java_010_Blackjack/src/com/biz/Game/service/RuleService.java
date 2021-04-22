@@ -46,7 +46,7 @@ public class RuleService {
 			System.out.println("Draw");
 		}
 		if (dealer < user || dealerBust) {
-			System.out.println("Player Win");
+			System.out.println("Dealer Bust! Player Win");
 		}
 		if (user == 21) {
 			System.out.println("♡♠Black Jack♣◇");
