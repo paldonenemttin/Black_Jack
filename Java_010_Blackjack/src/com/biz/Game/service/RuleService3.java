@@ -52,7 +52,7 @@ public class RuleService3 {
 		System.out.println("Dealer : " + dealer);
 		System.out.println("Player : " + user);
 
-		// if() 사용해서 각 카드값을 비교와 bust 상태를 확인하고
+		// if() 사용해서 각 카드값과 매개변수로 받은 bust 상태를 확인하고
 		// 승패 판별하는 메시지 출력
 		if (dealer == user || dealerBust && userBust) {
 			System.out.println("Draw");
